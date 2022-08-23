@@ -12,6 +12,9 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    implementation('io.jaegertracing:jaeger-client:1.8.1')
+    runtimeOnly 'org.slf4j:slf4j-simple:2.0.0'
+    implementation 'com.google.guava:guava:31.1-jre'
 }
 
 test {
